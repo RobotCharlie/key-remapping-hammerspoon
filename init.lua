@@ -1,20 +1,3 @@
-# key-remapping-hammerspoon
-
-
-## Step 1
-Download Hammerspoon from [official github site](https://github.com/Hammerspoon/hammerspoon/releases/tag/0.9.90)
-
-Unzip it and turn on permissions including `Accessibility` (this is important otherwise your eventtab will be failed to load)
-
-## Step 2
-Create a Hammerspoon init file by doing this in your terminal
-
-```bash
-vi ~/.hammerspoon/init.lua
-```
-in which you can put your key remap configs.
-Since I wanted to remap my arrow keys so I added the following
-```
 local function pressFn(mods, key)
 	if key == nil then
 		key = mods
@@ -68,19 +51,4 @@ remap({"ctrl", "cmd", "alt", "shift"}, "j", pressFn({"cmd", "alt", "shift"}, "le
 remap({"ctrl", "cmd", "alt", "shift"}, "k", pressFn({"cmd", "alt", "shift"}, "down"))
 remap({"ctrl", "cmd", "alt", "shift"}, "i", pressFn({"cmd", "alt", "shift"}, "up"))
 remap({"ctrl", "cmd", "alt", "shift"}, "l", pressFn({"cmd", "alt", "shift"}, "right"))
-
-```
-
-This will map 
-CTRL+i => up
-CTRL+k => down
-CTRL+j => left
-CTRL+l => right
-and also the more complex ones (I am sure you understand the rest of the code)
-
-## Step 3
-You can reload the config by clock the `Reload config` in the Hammerspoon Console, this will make whatever you just configed in the `init.lua`.
-
-## Step 4
-Verification. Hope it works!
 
