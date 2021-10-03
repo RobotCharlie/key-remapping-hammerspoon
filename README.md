@@ -13,7 +13,8 @@ Create a Hammerspoon init file by doing this in your terminal
 vi ~/.hammerspoon/init.lua
 ```
 in which you can put your key remap configs.
-Since I wanted to remap my arrow keys so I added the following
+Since I wanted to remap my arrow keys so I added the following code to `init.lua`. The code is same as [here](https://github.com/RobotCharlie/key-remapping-hammerspoon/blob/main/init.lua)
+
 ```
 local function pressFn(mods, key)
 	if key == nil then
@@ -72,10 +73,15 @@ remap({"ctrl", "cmd", "alt", "shift"}, "l", pressFn({"cmd", "alt", "shift"}, "ri
 ```
 
 This will map 
+
 CTRL+i => up
+
 CTRL+k => down
+
 CTRL+j => left
+
 CTRL+l => right
+
 and also the more complex ones (I am sure you understand the rest of the code)
 
 ## Step 3
