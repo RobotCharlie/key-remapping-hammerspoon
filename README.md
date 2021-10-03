@@ -85,7 +85,7 @@ CTRL+l => right
 and also the more complex ones (I am sure you understand the rest of the code)
 
 ## Step 3
-You can reload the config by clock the `Reload config` in the Hammerspoon Console, this will make whatever you just configed in the `init.lua`.
+You can reload the config by clock the `Reload config` in the Hammerspoon Console, this will reload the configurations in `init.lua`.
 
 ## Step 4
 Verification. Hope it works!
